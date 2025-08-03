@@ -1,0 +1,175 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: #222;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+nav{
+  width: 100%;
+  height: 100px;
+  padding: 4px 7%;
+}
+.logo{
+  color: #f74f10;
+  font-weight: 700;
+  font-style: italic;
+  font-family: 'Roboto', sans-serif;
+  font-size: 26px;
+  cursor: pointer;
+}
+.container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .logo img{
+  width: 100px;
+  margin-left: 20px;
+  filter: drop-shadow(2px 2px 10px #fff);
+}
+.container .links a{
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  margin: 0 20px;
+}
+.links a::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 3.5px;
+  bottom: -4px;
+  background-color: #f74f10;
+  transition: 0.3s linear;
+}
+.links a:hover::before,
+.links a:hover{
+  width: 100%;
+  color: #f74f10;
+}
+.container .search i{
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.3rem;
+  margin-right: 20px;
+}
+section {
+  width: 100%;
+  height: 90vh;
+}
+section .content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.content .main-content{
+  color: #fff;
+  max-width: 620px;
+  width: 100%;
+  margin: 0 auto;
+}
+.main-content h1{
+  font-size: clamp 2rem, 1rem + 5vw, 4rem;
+}
+.main-content h2{
+  font-size: clamp 2rem, 1rem + 5vw, 3.5rem;
+}
+.main-content p{
+  margin-top: 10px ;
+  color: #635e5c;
+}
+.main-content .buy-button{
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 10px;
+  width: 100%;
+  min-height: 7vh;
+}
+.order{
+  display: flex;
+  align-items: center;
+}
+ h3{
+  font-size: 1.8rem;
+}
+h3 .buy-button{
+  min-height: 50%;
+  margin-left: 10px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+
+h2{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  color: #f74f10;
+}
+.buy-button{
+  min-width: 50%;
+  background:linear-gradient(to bottom right, #f74f10, #f3084f);
+  color: #fff;
+  margin-left: 10px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 0 2px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: clamp(0.6rem, 1rem + 5vw, 1.5rem);
+}
+.buy-button:hover{
+  background: linear-gradient(to bottom right, #f3084f, #f74f10);
+  box-shadow: 0 0 30px #f74f10;
+  transition: 0.3s ease-in-out;
+}
+.content .image img{
+  min-width: 350px;
+  width: 100%;
+  margin-right: 100px;
+  transition: rotate(40deg);
+  filter: drop-shadow(-10px -10px 200px #f74f10);
+  border-radius: 50%;
+  background: transparent;
+}
+@media(max-width: 768px) {
+  .container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .container .logo img{
+    width: 80px;
+  }
+  .content{
+    flex-direction: column;
+    align-items: center;
+  }
+  .content .image img{
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .main-content h1, .main-content h2{
+    text-align: center;
+  }
+  h4{
+    text-align: center;
+  }
+}
+
