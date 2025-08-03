@@ -125,6 +125,7 @@ h2{
   min-width: 50%;
   background:linear-gradient(to bottom right, #f74f10, #f3084f);
   color: #fff;
+  align-items:center;
   margin-left: 10px;
   border: none;
   outline: none;
@@ -172,4 +173,5 @@ h2{
     text-align: center;
   }
 }
+
 
